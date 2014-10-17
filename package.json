@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Laravel 4 + AngularJS + Common tools",
   "main": "index.js",
+  "repository": "https://github.com/RJTM/laravel-angular-seed",
   "scripts": {
     "test": "php artisan serve"
   },
