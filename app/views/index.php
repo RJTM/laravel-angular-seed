@@ -2,7 +2,7 @@
 <html lang="en" ng-app="myApp">
 <head>
 	<meta charset="UTF-8">
-	<title>Campo Ramos</title>
+	<title>New Site</title>
 	<!-- injector:css -->
 	<link rel="stylesheet" href="/css/frontend.css">
 	<!-- endinjector -->
