@@ -104,14 +104,14 @@ module.exports = function(grunt){
 				}
 			},
 			less: {
-				files: [' <% paths.assets.css %>*.less'],
+				files: ['<%= paths.assets.css %>*.less'],
 				tasks: ['less:dev'],
 				options: {
 					livereload: true
 				}
 			},
 			html: {
-				files: ['<% paths.assets.js %>*.html'],
+				files: ['<%= paths.assets.js %>*.html'],
 				options: {
 					livereload: true
 				}
