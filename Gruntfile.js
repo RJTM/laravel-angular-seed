@@ -111,7 +111,7 @@ module.exports = function(grunt){
 				}
 			},
 			html: {
-				files: ['<%= paths.assets.js %>*.html'],
+				files: ['<%= paths.assets.js %>**/*.html'],
 				options: {
 					livereload: true
 				}
