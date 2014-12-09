@@ -86,10 +86,10 @@ module.exports = function(grunt){
 			options: {
 				remove:true
 			},
-			dev: { 
+			prod: { 
 				files: [
 					{
-						src: [ '<%= paths.assets.js %>**/*.js']
+						src: [ '<%= paths.js %>frontend.js']
 					}
 				]
 			}
@@ -126,8 +126,8 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-ng-annotate');
 	grunt.loadNpmTasks('grunt-injector');
 
-	grunt.registerTask('default', ['less:dev','ngAnnotate','injector:devJS','injector:devCSS','watch']);
+	grunt.registerTask('default', ['less:dev','injector:devJS','injector:devCSS','watch']);
 
-	grunt.registerTask('prod', ['less:prod', 'ngAnnotate', 'concat', 'uglify','injector:prod']);
+	grunt.registerTask('prod', ['less:prod', 'concat', 'ngAnnotate', 'uglify','injector:prod']);
 
 }
